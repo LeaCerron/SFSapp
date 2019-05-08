@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class key_dates extends AppCompatActivity {
 
@@ -16,12 +17,19 @@ public class key_dates extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        configureBackButton();
+    }
+
+    //code for configuring the back button
+    //back button returns to home page
+    private void configureBackButton(){
+        Button backButton = (Button) findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View view){
+                //finish allows the use of the android 'up' button
+                finish();
+                //startActivity(new Intent(claim_submitted.this, submit_claim.class));
             }
         });
     }
