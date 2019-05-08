@@ -8,4 +8,6 @@
     <string name="title_activity_claim_submitted">claim_submitted</string>
     <string name="title_activity_pending_claims">pending_claims</string>
     <string name="title_activity_key_dates">key_dates</string>
+    <string name="content_submitted">Content submitted</string>
+    <string name="back">Back</string>
 </resources>
