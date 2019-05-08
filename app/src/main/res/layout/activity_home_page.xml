@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".homePage">
 
-    <include
-        layout="@layout/content_home_page"
-        />
+    <include layout="@layout/content_home_page" />
 
 </android.support.design.widget.CoordinatorLayout>
